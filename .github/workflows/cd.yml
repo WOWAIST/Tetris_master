@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      RAILWAY_SERVICE_ID: ${{ vars.RAILWAY_SERVICE_ID }}
+      RAILWAY_SERVICE_NAME: ${{ vars.RAILWAY_SERVICE_NAME }}
 
     steps:
       - uses: actions/checkout@v4
@@ -36,6 +41,7 @@ jobs:
           ./gradlew build
 
       - name: Deploy Railway
-        run: npx @railway/cli up --service tetrisMaster
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          SERVICE="${RAILWAY_SERVICE_ID:-${RAILWAY_SERVICE_NAME:-tetrisMaster}}"
+          echo "Deploying to Railway service: ${SERVICE}"
+          npx @railway/cli@4.66.0 up --ci --verbose --service "${SERVICE}"

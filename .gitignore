@@ -1,0 +1,8 @@
+.DS_Store
+.env.local
+node_modules/
+frontend/dist/
+backend/.gradle/
+backend/build/
+*.log
+.env

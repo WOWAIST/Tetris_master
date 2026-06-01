@@ -1,0 +1,86 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: Tetris Master
+        - heading "키 입력을 블록 모션으로 익히는 연습실" [level=1] [ref=e8]
+      - generic "코스 선택" [ref=e9]:
+        - button "초급" [ref=e10] [cursor=pointer]
+        - button "중급" [ref=e11] [cursor=pointer]
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - text: 출제 모드
+        - generic "출제 모드" [ref=e14]:
+          - button "랜덤" [ref=e15] [cursor=pointer]
+          - button "순차" [ref=e16] [cursor=pointer]
+      - paragraph [ref=e17]: 반복을 줄이고 부족한 항목을 우선 출제합니다.
+    - generic [active] [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: 이동
+        - heading "왼쪽 이동" [level=2] [ref=e21]
+        - paragraph [ref=e22]: 현재 블록을 왼쪽으로 1칸 이동합니다.
+        - generic [ref=e24]: ←
+      - generic [ref=e207]:
+        - strong [ref=e208]: T Piece · move-left
+        - generic [ref=e209]: 빈 칸 위로 왼쪽 이동
+      - generic [ref=e210]:
+        - strong [ref=e211]: 연습 키를 눌러 시작하세요.
+        - generic [ref=e212]: 정답이면 모션이 결과 위치까지 재생됩니다.
+    - region "연습 통계" [ref=e213]:
+      - generic [ref=e214]:
+        - generic [ref=e215]: "0"
+        - paragraph [ref=e216]: 연속 성공
+      - generic [ref=e217]:
+        - generic [ref=e218]: 0%
+        - paragraph [ref=e219]: 정확도
+      - generic [ref=e220]:
+        - generic [ref=e221]: "0"
+        - paragraph [ref=e222]: 시도
+      - generic [ref=e223]:
+        - generic [ref=e224]: "0"
+        - paragraph [ref=e225]: 성공
+  - complementary "연습 목록" [ref=e226]:
+    - generic [ref=e227]:
+      - text: 기본 키 8종
+      - strong [ref=e228]: ←
+    - generic [ref=e229]:
+      - article [ref=e230]:
+        - generic [ref=e231]: ←
+        - generic [ref=e232]:
+          - strong [ref=e233]: 왼쪽 이동
+          - generic [ref=e234]: 왼쪽 정렬 · 0/0
+      - article [ref=e235]:
+        - generic [ref=e236]: →
+        - generic [ref=e237]:
+          - strong [ref=e238]: 오른쪽 이동
+          - generic [ref=e239]: 오른쪽 우물 · 0/0
+      - article [ref=e240]:
+        - generic [ref=e241]: ↓
+        - generic [ref=e242]:
+          - strong [ref=e243]: 소프트 드랍
+          - generic [ref=e244]: 높이 조절 · 0/0
+      - article [ref=e245]:
+        - generic [ref=e246]: Space
+        - generic [ref=e247]:
+          - strong [ref=e248]: 하드 드랍
+          - generic [ref=e249]: 즉시 착지 · 0/0
+      - article [ref=e250]:
+        - generic [ref=e251]: Z
+        - generic [ref=e252]:
+          - strong [ref=e253]: 반시계 회전
+          - generic [ref=e254]: 왼쪽 홈 삽입 · 0/0
+      - article [ref=e255]:
+        - generic [ref=e256]: X
+        - generic [ref=e257]:
+          - strong [ref=e258]: 시계 회전
+          - generic [ref=e259]: 오른쪽 홈 삽입 · 0/0
+      - article [ref=e260]:
+        - generic [ref=e261]: A
+        - generic [ref=e262]:
+          - strong [ref=e263]: 180도 회전
+          - generic [ref=e264]: 반대 구조 대응 · 0/0
+      - article [ref=e265]:
+        - generic [ref=e266]: C
+        - generic [ref=e267]:
+          - strong [ref=e268]: 홀드
+          - generic [ref=e269]: 블록 교체 · 0/0
